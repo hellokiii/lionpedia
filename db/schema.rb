@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20170530103748) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "name"
+    t.float    "personality"
+    t.boolean  "lover"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end

@@ -20,7 +20,8 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :last_sign_in_ip
       
       t.string :name
-
+      t.float :personality
+      t.boolean :lover
 
       ## Confirmable
       # t.string   :confirmation_token
