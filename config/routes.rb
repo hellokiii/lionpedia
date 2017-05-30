@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  root 'home#index'
+  get 'home/index' => 'home#index'
+  
+  get 'home/posts' => 'home#posts'
+  post 'home/write'
 
   get 'home/second' => 'home#second'
   get 'home/third' => 'home#third'

@@ -3,13 +3,13 @@ class HomeController < ApplicationController
   def index
   end
   
-<<<<<<< HEAD
+
   def second
   end
   
   def third
   end
-=======
+
   def profile
     @username
   end
@@ -19,5 +19,14 @@ class HomeController < ApplicationController
     
   end
     
->>>>>>> origin/yeonjin
+
+  def posts
+    
+  end
+  
+  def write
+    Post.create(content: params[:fname])
+    redirect_to '/home/index'
+  end
 end
+
