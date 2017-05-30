@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   get 'home/index' => 'home#index'
   
+  get 'home/profile/:id' => 'home#profile'
   get 'home/posts' => 'home#posts'
   post 'home/write'
 
   get 'home/second' => 'home#second'
   get 'home/third' => 'home#third'
-  get 'home/profile/' => 'home#profile'
   get '/rate_personality' => 'home#rate_personality'
 
   devise_for :users
